@@ -1,6 +1,34 @@
 # 🚀 InvestIQ AI - Multi-Agent Investment Research Platform
 
+<!-- Badges Section -->
+<p align="left">
+  <img src="https://img.shields.io/badge/React-19-blue.svg?style=flat-square&logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-5-64748b.svg?style=flat-square&logo=vite" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind--CSS-3.4-38bdf8.svg?style=flat-square&logo=tailwind-css" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/Node.js-18+-green.svg?style=flat-square&logo=node.js" alt="Node" />
+  <img src="https://img.shields.io/badge/Express-4-lightgrey.svg?style=flat-square&logo=express" alt="Express" />
+  <img src="https://img.shields.io/badge/LangGraph-Agentic-orange.svg?style=flat-square" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/Google--Gemini-AI-blueviolet.svg?style=flat-square" alt="Gemini" />
+  <img src="https://img.shields.io/badge/License-MIT-success.svg?style=flat-square" alt="License" />
+</p>
+
 An institutional-grade, AI-driven financial research platform that orchestrates an advanced multi-agent LangGraph workflow. Using real-time financial market metrics, news feeds, and Google Gemini AI, it generates deterministic investment verdicts (`INVEST` / `WATCH` / `PASS`) with confidence scores, opposing thesis toggles, follow-up Q&A copilot capabilities, and interactive data visualisations.
+
+---
+
+## 📸 Platform Previews
+
+### 1. Advanced Search & Landing Interface
+![Search Dashboard](docs/screenshots/landing.png)
+
+### 2. Multi-Agent Analysis Dashboard
+![Metrics Dashboard](docs/screenshots/dashboard.png)
+
+### 3. Devil's Advocate (Thesis Inversion) & RAG Copilot Chat
+<p align="left">
+  <img src="docs/screenshots/devils_advocate.png" width="49%" />
+  <img src="docs/screenshots/copilot.png" width="49%" />
+</p>
 
 ---
 
@@ -159,11 +187,13 @@ npm test
 
 ## 📚 Extended Documentation
 For deep-dive architecture details, actual execution runs, and cloud hosting setup:
-- **[Architecture Design](file:///Users/mdzishan/Desktop/InvestIQ%20AI%20By%20Zishan/docs/architecture.md):** Detail maps of the LangGraph node network and state channels.
-- **[Execution Runs Logs](file:///Users/mdzishan/Desktop/InvestIQ%20AI%20By%20Zishan/docs/execution_runs.md):** Actual execution streams and scoring outputs for AAPL, NVDA, and TSLA.
-- **[Deployment Configurations](file:///Users/mdzishan/Desktop/InvestIQ%20AI%20By%20Zishan/docs/deployment.md):** Step-by-step setup guides for Render, Railway, and Vercel hosting.
+- **[Architecture Design](docs/architecture.md):** Detail maps of the LangGraph node network and state channels.
+- **[Execution Runs Logs](docs/execution_runs.md):** Actual execution streams and scoring outputs for AAPL, NVDA, and TSLA.
+- **[Deployment Configurations](docs/deployment.md):** Step-by-step setup guides for Render, Railway, and Vercel hosting.
 
 ---
 
-## 👨‍💻 Authorship
-Redesigned and optimized for high-performance investment analysis by Ram Kumar & Pair-Programmed with Antigravity AI.
+## 👨‍💻 Authorship & Credits
+
+Crafted with 🧠 and 💻 by **MD ZISHAN**  
+*Optimised for high-performance multi-agent investment analysis & AI integration.*
