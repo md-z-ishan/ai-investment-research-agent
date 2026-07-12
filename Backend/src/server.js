@@ -7,21 +7,33 @@ const notFound = require("./middleware/notFound");
 
 const app = express();
 
-const allowedOrigins = (env.CORS_ORIGIN || env.FRONTEND_URL || "*")
+// Always allow these origins regardless of env config
+const HARDCODED_ORIGINS = [
+  "https://ai-investment-research-agent-rouge-nu.vercel.app",
+  "http://localhost:5173",
+  "http://localhost:3000",
+];
+
+const envOrigins = (env.CORS_ORIGIN || env.FRONTEND_URL || "")
   .split(",")
-  .map((origin) => origin.trim())
+  .map((o) => o.trim())
   .filter(Boolean);
+
+const allowedOrigins = [...new Set([...HARDCODED_ORIGINS, ...envOrigins])];
 
 app.use(cors({
   origin: (origin, callback) => {
-    if (!origin) {
+    // Allow requests with no origin (curl, Postman, server-to-server)
+    if (!origin) return callback(null, true);
+
+    if (
+      allowedOrigins.includes("*") ||
+      allowedOrigins.some((o) => o === origin || origin.endsWith(".vercel.app"))
+    ) {
       return callback(null, true);
     }
 
-    if (allowedOrigins.includes("*") || allowedOrigins.includes(origin)) {
-      return callback(null, true);
-    }
-
+    console.warn(`CORS blocked: ${origin}`);
     return callback(null, false);
   },
   credentials: true,
