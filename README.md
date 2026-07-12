@@ -12,9 +12,28 @@
   <img src="https://img.shields.io/badge/License-MIT-success.svg?style=flat-square" alt="License" />
 </p>
 
+<!-- Quick Links -->
+<p align="left">
+  <a href="https://ai-investment-research-agent-rouge-nu.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20App-6366f1?style=for-the-badge" alt="Live Demo" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/md-z-ishan/ai-investment-research-agent" target="_blank">
+    <img src="https://img.shields.io/badge/📁%20GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/md-z-ishan/ai-investment-research-agent/tree/main/docs" target="_blank">
+    <img src="https://img.shields.io/badge/📚%20Docs-Architecture%20%26%20Deployment-0ea5e9?style=for-the-badge" alt="Documentation" />
+  </a>
+</p>
+
+> 🔗 **Live App:** [https://ai-investment-research-agent-rouge-nu.vercel.app](https://ai-investment-research-agent-rouge-nu.vercel.app)  
+> 🖥️ **Backend API:** [https://investment-ai-backend.onrender.com](https://investment-ai-backend.onrender.com)
+
 An institutional-grade, AI-driven financial research platform that orchestrates an advanced multi-agent LangGraph workflow. Using real-time financial market metrics, news feeds, and Google Gemini AI, it generates deterministic investment verdicts (`INVEST` / `WATCH` / `PASS`) with confidence scores, opposing thesis toggles, follow-up Q&A copilot capabilities, and interactive data visualisations.
 
 ---
+
 
 ## 📸 Platform Previews
 
